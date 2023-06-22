@@ -1,0 +1,124 @@
+#playlists {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.playlist-element {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.playlist-image-container {
+    width: 48px;
+    height: 48px;
+}
+
+.playlist-image-container img {
+    width: 100%;
+}
+
+.playlist-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.playlist-number-songs {
+    text-decoration: none;
+}
+
+.playlist-edit-container {
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 384px;
+    width: 524px;
+}
+
+dialog {
+    border-radius: 10px;
+    background: #242424;
+    color: white;
+}
+
+.close-dialog {
+    align-self: end;
+    background-color: transparent;
+    border: 0;
+    border-radius: 32px;
+    color: hsla(0, 0%, 100%, 0.7);
+    height: 32px;
+    margin-top: -8px;
+    margin-inline-end: -8px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.playlist-edit-button,
+.playlist-delete-button {
+    background-color: transparent;
+    border: 0;
+    color: hsla(0, 0%, 100%, 0.7);
+    cursor: pointer;
+}
+
+.close-dialog:hover,
+.playlist-edit-button:hover,
+.playlist-delete-button:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.dialog-form {
+    padding: 0 24px 24px;
+    width: 100%;
+}
+
+.dialog-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-form input {
+    background: hsla(0, 0%, 100%, 0.1);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.dialog-form textarea {
+    background: hsla(0, 0%, 100%, 0.1);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    height: 100%;
+    padding: 8px 8px 28px;
+    resize: none;
+    width: 100%;
+}
+
+.dialog-form button {
+    align-self: end;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
